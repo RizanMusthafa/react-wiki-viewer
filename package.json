@@ -2,14 +2,17 @@
   "name": "wiki-viewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rizanmusthafa.github.io/react-wiki-viewer",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.3",
+    "gh-pages": "^1.2.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-scripts": "1.1.5"
   },
   "scripts": {
+    "deploy:gh": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
